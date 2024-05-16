@@ -1,0 +1,32 @@
+GET http://localhost:4001/states/
+###
+
+GET http://localhost:4001/states/8
+###
+
+POST http://localhost:4001/districts/
+Content-Type:application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+###
+
+GET http://localhost:4001/districts/322
+###
+
+DELETE http://localhost:4001/districts/22
+###
+
+PUT http://localhost:4001/districts/25
+###
+
+GET http://localhost:4001/states/322/stats
+###
+
+GET http://localhost:4001/districts/1/details
